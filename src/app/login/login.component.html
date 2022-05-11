@@ -1,0 +1,94 @@
+
+    <!-- user login area -->
+    <section class="user-login-area">
+        <div class="user-login-logo text-center">
+            <a href="index.html"><img src="/assets/images/logo.png" alt=""></a>
+        </div>
+        <div class="user-login-box">
+            <div class="login-box-table">
+                <p class="theme-description text-center">Please input your email id to start using cryptocurrency miner dashboard.</p>
+                <div class="login-box-inner">
+                    <h2 class="login-title">Welcome back!</h2>
+                    <div class="user-login-form">
+                        <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+
+                            <h4>Use a local account to log in.</h4>
+                            <hr>
+                            <div class="text-danger validation-summary-errors" data-valmsg-summary="true"><ul><li>Email required</li>
+<li>Password required</li>
+</ul></div>
+                            <div class="theme-input-box">
+                                <label for="Input_Email">Email</label>
+                                <input class="theme-input" type="email" data-val="true" data-val-email="Email is not correct" data-val-required="Email required" id="Input_Email" formControlName="Email" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Email" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="theme-input-box">
+                                <label for="Input_Password">Password</label>
+                                <input class="theme-input" type="password" data-val="true" data-val-required="Password required" id="Input_Password"  formControlName="Password">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Password" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="theme-input-box">
+                                <div class="checkbox">
+                                    <input type="checkbox" data-val="true" data-val-required="The RememberMe field is required." id="Input_RememberMe" formControlName="RememberMe" value="true">
+                                    RememberMe
+                                </div>
+                            </div>
+                            <div class="theme-input-box">
+                                <button type="submit"   class="btn btn-primary">Login in</button>
+                            </div>
+                            <div class="theme-input-box">
+                                <p>
+                                    <a id="forgot-password" href="/Identity/Account/ForgotPassword">Forgot your password?</a>
+                                </p>
+                                <p>
+                                    <a href="/Identity/Account/Register?returnUrl=.%2FDashboard">Register as a new user</a>
+                                </p>
+                                <p>
+                                    <a id="resend-confirmation" href="">Resend email confirmation</a>
+                                </p>
+                            </div>
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8BjivY-r4uBFhaxbHnlC_QSmtidN_b2EffNzIOIOJ3p2eR90WTN2GKc0xcTje0f1zDed_CJC1Nv262asEiSE7yl_hHHqkGSzd5SJO5ucGgGuZNh1LdqjO9JFR6bFF8VOxNrhfmG2ZiCh2_qzDUaysFU"><input name="Input.RememberMe" type="hidden" value="false"></form>
+                    </div>
+                </div>
+                <p class="login-box-des">Still need help? <a href="contact.html"> Contact Support</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- user login area -->
+    <!-- switch-button -->
+    <div class="switch-button"><i class="fas fa-cog fa-spin"></i></div>
+    <div class="switched-styles">
+        <h4>Color Switcher</h4>
+        <ul class="list-unstyled">
+            <li class="theme-default" data-color="dark-blue"></li>
+            <li class="light-sea-green" data-color="light-sea-green"></li>
+            <li class="theme-dark-green" data-color="dark-green"></li>
+            <li class="theme-light-blue" data-color="light-blue"></li>
+            <li class="theme-dark-orchid" data-color="dark-orchid"></li>
+            <li class="theme-yellow" data-color="yellow"></li>
+        </ul>
+        <div class="switched-mode">
+            <h4>Layout Mode</h4>
+            <ul class="clearfix">
+                <li><a class="active" id="light_mode" href="javascript:void(0);">Light</a></li>
+                <li><a id="dark_mode" href="javascript:void(0);">Dark</a></li>
+            </ul>
+        </div>
+        <div class="hide-button">×</div>
+    </div>
+    <!-- switch-button -->
+    <!-- Preloader area -->
+    <!-- <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-images"><img src="/assets/images/loader.gif" alt="Loader"></div>
+    </div> -->
+    <!-- Preloader area -->
+    <!-- script area -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+    <script src="/js/site-custom.js"></script>
+    <!-- script area -->
+
