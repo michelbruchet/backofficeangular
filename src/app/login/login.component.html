@@ -1,4 +1,4 @@
-
+<body class="login-bg">
     <!-- user login area -->
     <section class="user-login-area">
         <div class="user-login-logo text-center">
@@ -78,10 +78,10 @@
     </div>
     <!-- switch-button -->
     <!-- Preloader area -->
-    <!-- <div id="loader-wrapper">
+    <div *ngIf="(selectCandidateRequestList$ | async)?.loading" id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-images"><img src="/assets/images/loader.gif" alt="Loader"></div>
-    </div> -->
+    </div>
     <!-- Preloader area -->
     <!-- script area -->
     <script src="/js/jquery.min.js"></script>
@@ -92,3 +92,4 @@
     <script src="/js/site-custom.js"></script>
     <!-- script area -->
 
+</body>

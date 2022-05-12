@@ -103,5 +103,8 @@
       }
     }
   },
-  "defaultProject": "azed-crypto"
+  "defaultProject": "azed-crypto",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
